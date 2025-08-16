@@ -1,0 +1,30 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- BPMN圆圈 -->
+    <circle cx="250" cy="200" r="120" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="250" y="180" text-anchor="middle" font-size="24" fill="#1976d2" font-weight="bold">BPMN</text>
+    <text x="250" y="210" text-anchor="middle" font-size="14" fill="#1976d2">结构化流程</text>
+    <text x="250" y="230" text-anchor="middle" font-size="14" fill="#1976d2">固定执行路径</text>
+
+    <!-- CMMN圆圈 -->
+    <circle cx="550" cy="200" r="120" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="550" y="180" text-anchor="middle" font-size="24" fill="#7b1fa2" font-weight="bold">CMMN</text>
+    <text x="550" y="210" text-anchor="middle" font-size="14" fill="#7b1fa2">动态案例管理</text>
+    <text x="550" y="230" text-anchor="middle" font-size="14" fill="#7b1fa2">灵活执行路径</text>
+
+    <!-- DMN菱形 -->
+    <path d="M400 50 L500 150 L400 250 L300 150 Z" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+    <text x="400" y="140" text-anchor="middle" font-size="24" fill="#e65100" font-weight="bold">DMN</text>
+    <text x="400" y="170" text-anchor="middle" font-size="14" fill="#e65100">业务决策</text>
+    <text x="400" y="190" text-anchor="middle" font-size="14" fill="#e65100">规则引擎</text>
+
+    <!-- 连接线和文字 -->
+    <path d="M320 150 L380 150" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    <path d="M420 150 L480 150" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    <path d="M400 200 L400 250" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+
+    <!-- 底部说明文字 -->
+    <text x="400" y="350" text-anchor="middle" font-size="16" fill="#333">Flowable工作流引擎三大标准协同工作</text>
+</svg> 

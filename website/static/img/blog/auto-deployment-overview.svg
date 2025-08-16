@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .subtitle { font: bold 18px Arial; fill: #555; }
+    .box { stroke: #1976d2; stroke-width: 2; fill: #e3f2fd; rx: 10; ry: 10; }
+    .arrow { stroke: #1976d2; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .label { font: 14px Arial; fill: #333; }
+    .platform { stroke: #0d47a1; stroke-width: 3; fill: #bbdefb; rx: 10; ry: 10; }
+    .platform-label { font: bold 16px Arial; fill: #0d47a1; }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1976d2" />
+    </marker>
+  </defs>
+  
+  <text x="400" y="30" text-anchor="middle" class="title">Flowable 自动部署概述</text>
+  
+  <!-- 类路径资源 -->
+  <rect x="50" y="60" width="300" height="280" class="box" />
+  <text x="200" y="85" text-anchor="middle" class="subtitle">类路径资源</text>
+  
+  <text x="70" y="115" class="label">• 应用 (.bar, .zip)</text>
+  <text x="70" y="145" class="label">• 流程模型 (.bpmn, .bpmn20.xml)</text>
+  <text x="70" y="175" class="label">• 案例模型 (.cmmn, .cmmn.xml)</text>
+  <text x="70" y="205" class="label">• 决策模型 (.dmn, .dmn.xml)</text>
+  <text x="70" y="235" class="label">• 表单模型 (.form, .page)</text>
+  <text x="70" y="265" class="label">• 事件注册模型 (.channel, .event)</text>
+  <text x="70" y="295" class="label">• 其他配置文件 (.json, .action, ...)</text>
+  
+  <!-- 自动部署过程 -->
+  <path d="M 350 200 L 450 200" class="arrow" />
+  <text x="400" y="185" text-anchor="middle" class="label">自动部署</text>
+  
+  <!-- Flowable 平台 -->
+  <rect x="450" y="60" width="300" height="280" class="platform" />
+  <text x="600" y="85" text-anchor="middle" class="platform-label">Flowable 平台</text>
+  
+  <text x="470" y="115" class="label">• 应用部署</text>
+  <text x="470" y="145" class="label">• 流程引擎</text>
+  <text x="470" y="175" class="label">• 案例引擎</text>
+  <text x="470" y="205" class="label">• 决策引擎</text>
+  <text x="470" y="235" class="label">• 表单引擎</text>
+  <text x="470" y="265" class="label">• 事件注册引擎</text>
+  <text x="470" y="295" class="label">• 内容引擎</text>
+  
+  <!-- 配置属性 -->
+  <text x="400" y="370" text-anchor="middle" class="label">通过配置属性控制自动部署行为</text>
+</svg> 

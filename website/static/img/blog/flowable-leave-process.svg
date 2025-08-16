@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font-size: 20px; font-weight: bold; }
+        .step { font-size: 16px; }
+        .table { font-size: 14px; }
+        rect { fill: white; stroke: #4CAF50; stroke-width: 2; }
+        text { font-family: Arial; }
+        .step-box { fill: #E8F5E9; }
+        .arrow { stroke: #4CAF50; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    
+    <!-- 箭头标记定义 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50"/>
+        </marker>
+    </defs>
+    
+    <!-- 标题 -->
+    <text x="250" y="40" class="title">请假流程数据流转示意图</text>
+    
+    <!-- 步骤1：流程部署 -->
+    <rect x="50" y="80" width="180" height="100" class="step-box" rx="5"/>
+    <text x="90" y="110" class="step">1. 流程部署</text>
+    <text x="60" y="140" class="table">ACT_RE_DEPLOYMENT</text>
+    <text x="60" y="160" class="table">ACT_RE_PROCDEF</text>
+    
+    <!-- 步骤2：发起申请 -->
+    <rect x="300" y="80" width="180" height="100" class="step-box" rx="5"/>
+    <text x="340" y="110" class="step">2. 发起申请</text>
+    <text x="310" y="140" class="table">ACT_RU_EXECUTION</text>
+    <text x="310" y="160" class="table">ACT_RU_TASK</text>
+    
+    <!-- 步骤3：主管审批 -->
+    <rect x="550" y="80" width="180" height="100" class="step-box" rx="5"/>
+    <text x="590" y="110" class="step">3. 主管审批</text>
+    <text x="560" y="140" class="table">ACT_RU_TASK</text>
+    <text x="560" y="160" class="table">ACT_HI_TASKINST</text>
+    
+    <!-- 步骤4：人事审批 -->
+    <rect x="300" y="250" width="180" height="100" class="step-box" rx="5"/>
+    <text x="340" y="280" class="step">4. 人事审批</text>
+    <text x="310" y="310" class="table">ACT_RU_TASK</text>
+    <text x="310" y="330" class="table">ACT_HI_TASKINST</text>
+    
+    <!-- 步骤5：流程结束 -->
+    <rect x="50" y="250" width="180" height="100" class="step-box" rx="5"/>
+    <text x="90" y="280" class="step">5. 流程结束</text>
+    <text x="60" y="310" class="table">ACT_HI_PROCINST</text>
+    <text x="60" y="330" class="table">ACT_HI_TASKINST</text>
+    
+    <!-- 连接线 -->
+    <path d="M 230 130 L 300 130" class="arrow"/>
+    <path d="M 480 130 L 550 130" class="arrow"/>
+    <path d="M 550 180 C 500 200 450 220 480 250" class="arrow"/>
+    <path d="M 300 300 L 230 300" class="arrow"/>
+</svg> 

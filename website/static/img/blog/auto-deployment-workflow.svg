@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .step { stroke: #4527a0; stroke-width: 2; fill: #ede7f6; rx: 10; ry: 10; }
+    .step-text { font: bold 16px Arial; fill: #4527a0; }
+    .step-desc { font: 14px Arial; fill: #333; }
+    .arrow { stroke: #555; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .note { font: italic 14px Arial; fill: #777; }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+  
+  <text x="400" y="30" text-anchor="middle" class="title">Flowable 自动部署工作流程</text>
+  
+  <!-- 步骤1 -->
+  <rect x="50" y="70" width="200" height="80" class="step" />
+  <text x="150" y="100" text-anchor="middle" class="step-text">1. 应用启动</text>
+  <text x="150" y="125" text-anchor="middle" class="step-desc">Spring Boot 应用初始化</text>
+  
+  <!-- 步骤2 -->
+  <rect x="300" y="70" width="200" height="80" class="step" />
+  <text x="400" y="100" text-anchor="middle" class="step-text">2. 扫描类路径</text>
+  <text x="400" y="125" text-anchor="middle" class="step-desc">查找配置的资源位置</text>
+  
+  <!-- 步骤3 -->
+  <rect x="550" y="70" width="200" height="80" class="step" />
+  <text x="650" y="100" text-anchor="middle" class="step-text">3. 识别模型文件</text>
+  <text x="650" y="125" text-anchor="middle" class="step-desc">根据文件后缀识别模型类型</text>
+  
+  <!-- 步骤4 -->
+  <rect x="550" y="200" width="200" height="80" class="step" />
+  <text x="650" y="230" text-anchor="middle" class="step-text">4. 解析模型</text>
+  <text x="650" y="255" text-anchor="middle" class="step-desc">验证和转换模型定义</text>
+  
+  <!-- 步骤5 -->
+  <rect x="300" y="200" width="200" height="80" class="step" />
+  <text x="400" y="230" text-anchor="middle" class="step-text">5. 部署到引擎</text>
+  <text x="400" y="255" text-anchor="middle" class="step-desc">创建部署并存储到数据库</text>
+  
+  <!-- 步骤6 -->
+  <rect x="50" y="200" width="200" height="80" class="step" />
+  <text x="150" y="230" text-anchor="middle" class="step-text">6. 部署完成</text>
+  <text x="150" y="255" text-anchor="middle" class="step-desc">模型可用于执行和查询</text>
+  
+  <!-- 连接线 -->
+  <path d="M250 110 L300 110" class="arrow" />
+  <path d="M500 110 L550 110" class="arrow" />
+  <path d="M650 150 L650 200" class="arrow" />
+  <path d="M550 240 L500 240" class="arrow" />
+  <path d="M300 240 L250 240" class="arrow" />
+  
+  <!-- 注释 -->
+  <text x="400" y="320" text-anchor="middle" class="note">自动部署在应用启动时执行，无需手动干预</text>
+  <text x="400" y="345" text-anchor="middle" class="note">可通过配置属性自定义部署行为</text>
+  <text x="400" y="370" text-anchor="middle" class="note">支持热部署和版本控制</text>
+</svg> 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Flowable 脚本 API 架构</text>
+  
+  <!-- 主框架 -->
+  <rect x="150" y="80" width="500" height="380" rx="10" fill="#e9f0f7" stroke="#4a86e8" stroke-width="2"/>
+  
+  <!-- Flowable引擎盒子 -->
+  <rect x="200" y="100" width="400" height="80" rx="5" fill="#90b4f0" stroke="#2a5db0" stroke-width="2"/>
+  <text x="400" y="145" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">Flowable 处理引擎</text>
+  
+  <!-- 脚本API盒子 -->
+  <rect x="200" y="210" width="400" height="80" rx="5" fill="#76a5af" stroke="#447b82" stroke-width="2"/>
+  <text x="400" y="255" font-family="Arial" font-size="18" text-anchor="middle" fill="#ffffff">脚本 API (flw)</text>
+  
+  <!-- 模块盒子 -->
+  <rect x="200" y="320" width="85" height="60" rx="5" fill="#b6d7a8" stroke="#6aa84f" stroke-width="2"/>
+  <text x="242" y="355" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">JSON</text>
+  
+  <rect x="305" y="320" width="85" height="60" rx="5" fill="#ffe599" stroke="#f1c232" stroke-width="2"/>
+  <text x="347" y="355" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">时间</text>
+  
+  <rect x="410" y="320" width="85" height="60" rx="5" fill="#ea9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="452" y="355" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">字符串</text>
+  
+  <rect x="515" y="320" width="85" height="60" rx="5" fill="#c9daf8" stroke="#6d9eeb" stroke-width="2"/>
+  <text x="557" y="355" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">数学</text>
+  
+  <!-- 脚本执行模块 -->
+  <rect x="200" y="400" width="400" height="40" rx="5" fill="#d5a6bd" stroke="#a64d79" stroke-width="2"/>
+  <text x="400" y="425" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">JavaScript, Groovy, ... (JSR-223)</text>
+  
+  <!-- 连接线 -->
+  <line x1="400" y1="180" x2="400" y2="210" stroke="#666" stroke-width="2"/>
+  <line x1="400" y1="290" x2="400" y2="320" stroke="#666" stroke-width="2"/>
+  <line x1="400" y1="380" x2="400" y2="400" stroke="#666" stroke-width="2"/>
+  
+  <!-- 水平连接线 -->
+  <line x1="242" y1="310" x2="557" y2="310" stroke="#666" stroke-width="2"/>
+  <line x1="242" y1="310" x2="242" y2="320" stroke="#666" stroke-width="2"/>
+  <line x1="347" y1="310" x2="347" y2="320" stroke="#666" stroke-width="2"/>
+  <line x1="452" y1="310" x2="452" y2="320" stroke="#666" stroke-width="2"/>
+  <line x1="557" y1="310" x2="557" y2="320" stroke="#666" stroke-width="2"/>
+</svg> 

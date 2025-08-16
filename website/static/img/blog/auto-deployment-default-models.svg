@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .subtitle { font: bold 20px Arial; fill: #555; }
+    .model-box { stroke: #1976d2; stroke-width: 2; fill: #e3f2fd; rx: 8; ry: 8; }
+    .model-title { font: bold 16px Arial; fill: #0d47a1; }
+    .model-desc { font: 14px Arial; fill: #333; }
+    .arrow { stroke: #555; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .note { font: italic 14px Arial; fill: #777; }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+  
+  <text x="400" y="30" text-anchor="middle" class="title">Flowable Work 默认自动部署模型</text>
+  
+  <!-- 中心模块 -->
+  <rect x="300" y="60" width="200" height="60" class="model-box" />
+  <text x="400" y="90" text-anchor="middle" class="model-title">default-models</text>
+  <text x="400" y="110" text-anchor="middle" class="model-desc">默认模型依赖项</text>
+  
+  <!-- 连接线 -->
+  <path d="M400 120 L400 140" class="arrow" />
+  <path d="M400 140 L200 160" class="arrow" />
+  <path d="M400 140 L600 160" class="arrow" />
+  <path d="M200 220 L200 250" class="arrow" />
+  <path d="M600 220 L600 250" class="arrow" />
+  <path d="M200 310 L200 340" class="arrow" />
+  <path d="M600 310 L600 340" class="arrow" />
+  
+  <!-- 左侧模型 -->
+  <rect x="100" y="160" width="200" height="60" class="model-box" />
+  <text x="200" y="185" text-anchor="middle" class="model-title">动作模型</text>
+  <text x="200" y="205" text-anchor="middle" class="model-desc">任务、流程和案例操作</text>
+  
+  <rect x="100" y="250" width="200" height="60" class="model-box" />
+  <text x="200" y="275" text-anchor="middle" class="model-title">流程和决策模型</text>
+  <text x="200" y="295" text-anchor="middle" class="model-desc">审批流程和权限检查</text>
+  
+  <rect x="100" y="340" width="200" height="60" class="model-box" />
+  <text x="200" y="365" text-anchor="middle" class="model-title">内容模型</text>
+  <text x="200" y="385" text-anchor="middle" class="model-desc">合同、通用和策略内容类型</text>
+  
+  <!-- 右侧模型 -->
+  <rect x="500" y="160" width="200" height="60" class="model-box" />
+  <text x="600" y="185" text-anchor="middle" class="model-title">表单模型</text>
+  <text x="600" y="205" text-anchor="middle" class="model-desc">用户管理和内容表单</text>
+  
+  <rect x="500" y="250" width="200" height="60" class="model-box" />
+  <text x="600" y="275" text-anchor="middle" class="model-title">策略模型</text>
+  <text x="600" y="295" text-anchor="middle" class="model-desc">安全策略和权限控制</text>
+  
+  <rect x="500" y="340" width="200" height="60" class="model-box" />
+  <text x="600" y="365" text-anchor="middle" class="model-title">模板和主题模型</text>
+  <text x="600" y="385" text-anchor="middle" class="model-desc">文档模板和UI主题</text>
+  
+  <!-- 注释 -->
+  <text x="400" y="430" text-anchor="middle" class="note">这些默认模型提供了 Flowable Work 应用的基础功能</text>
+  <text x="400" y="450" text-anchor="middle" class="note">可以通过自定义模型覆盖默认行为</text>
+  <text x="400" y="470" text-anchor="middle" class="note">使用相同的模型键可以替换默认模型</text>
+</svg> 

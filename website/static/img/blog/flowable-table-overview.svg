@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font-size: 24px; font-weight: bold; }
+        .prefix { font-size: 20px; font-weight: bold; color: #1976D2; }
+        .desc { font-size: 14px; }
+        rect { fill: white; stroke: #2196F3; stroke-width: 2; }
+        text { font-family: Arial; }
+        .module-box { fill: #E3F2FD; }
+        .arrow { stroke: #2196F3; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    
+    <!-- 箭头定义 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3"/>
+        </marker>
+    </defs>
+    
+    <!-- 标题 -->
+    <text x="300" y="40" class="title">Flowable表结构与数据流转</text>
+    
+    <!-- Repository表 -->
+    <rect x="50" y="80" width="200" height="80" class="module-box" rx="5"/>
+    <text x="70" y="110" class="prefix">ACT_RE_*</text>
+    <text x="70" y="140" class="desc">流程定义和静态资源</text>
+    
+    <!-- Runtime表 -->
+    <rect x="300" y="80" width="200" height="80" class="module-box" rx="5"/>
+    <text x="320" y="110" class="prefix">ACT_RU_*</text>
+    <text x="320" y="140" class="desc">运行时的流程数据</text>
+    
+    <!-- History表 -->
+    <rect x="550" y="80" width="200" height="80" class="module-box" rx="5"/>
+    <text x="570" y="110" class="prefix">ACT_HI_*</text>
+    <text x="570" y="140" class="desc">历史流程数据</text>
+    
+    <!-- Identity表 -->
+    <rect x="50" y="200" width="200" height="80" class="module-box" rx="5"/>
+    <text x="70" y="230" class="prefix">ACT_ID_*</text>
+    <text x="70" y="260" class="desc">用户和组织数据</text>
+    
+    <!-- General表 -->
+    <rect x="300" y="200" width="200" height="80" class="module-box" rx="5"/>
+    <text x="320" y="230" class="prefix">ACT_GE_*</text>
+    <text x="320" y="260" class="desc">通用数据</text>
+    
+    <!-- Application表 -->
+    <rect x="550" y="200" width="200" height="80" class="module-box" rx="5"/>
+    <text x="570" y="230" class="prefix">ACT_APP_*</text>
+    <text x="570" y="260" class="desc">应用级数据</text>
+    
+    <!-- CMMN表 -->
+    <rect x="175" y="320" width="200" height="80" class="module-box" rx="5"/>
+    <text x="195" y="350" class="prefix">ACT_CMMN_*</text>
+    <text x="195" y="380" class="desc">案例管理数据</text>
+    
+    <!-- DMN表 -->
+    <rect x="425" y="320" width="200" height="80" class="module-box" rx="5"/>
+    <text x="445" y="350" class="prefix">ACT_DMN_*</text>
+    <text x="445" y="380" class="desc">决策管理数据</text>
+    
+    <!-- Flowable特定表 -->
+    <rect x="300" y="440" width="200" height="80" class="module-box" rx="5"/>
+    <text x="320" y="470" class="prefix">FLW_*</text>
+    <text x="320" y="500" class="desc">Flowable扩展功能</text>
+    
+    <!-- 数据流转箭头 -->
+    <!-- 核心流程 -->
+    <path d="M 250 120 L 300 120" class="arrow"/>
+    <path d="M 500 120 L 550 120" class="arrow"/>
+    
+    <!-- 垂直关联 -->
+    <path d="M 400 160 L 400 200" class="arrow"/>
+    
+    <!-- CMMN和DMN关联 -->
+    <path d="M 275 320 L 275 240" class="arrow"/>
+    <path d="M 525 320 L 525 240" class="arrow"/>
+    
+    <!-- Flowable特定表关联 -->
+    <path d="M 400 400 L 400 440" class="arrow"/>
+</svg> 

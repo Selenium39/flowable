@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="1200" height="630" fill="#1a365d"/>
+    
+    <!-- 装饰性连接线 - 代表流程 -->
+    <path d="M200,315 C400,315 800,115 1000,315" stroke="#4299e1" stroke-width="4" fill="none"/>
+    <path d="M200,315 C400,315 800,515 1000,315" stroke="#4299e1" stroke-width="4" fill="none"/>
+    
+    <!-- AI 图形元素 -->
+    <g transform="translate(250,215)">
+        <rect x="0" y="0" width="200" height="200" rx="20" fill="#2b6cb0"/>
+        <text x="100" y="120" font-family="Arial" font-size="80" fill="white" text-anchor="middle">AI</text>
+    </g>
+    
+    <!-- Flowable 图形元素 -->
+    <g transform="translate(750,215)">
+        <circle cx="100" cy="100" r="100" fill="#2c5282"/>
+        <path d="M60,100 L140,100 M100,60 L100,140" stroke="white" stroke-width="8"/>
+    </g>
+    
+    <!-- 简化标题 -->
+    <text x="600" y="460" font-family="Arial" font-size="64" fill="white" text-anchor="middle" font-weight="bold">Flowable + AI</text>
+</svg> 

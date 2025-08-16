@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+    
+    <!-- 装饰背景 -->
+    <path d="M0,0 L1200,0 L1000,630 L0,630 Z" fill="#1f3245" opacity="0.1"/>
+    
+    <!-- Logo和标题区域 -->
+    <g transform="translate(100,150)">
+        <!-- Flowable Logo简化版 -->
+        <circle cx="50" cy="50" r="40" fill="#1f3245"/>
+        <path d="M30,50 L70,50 M50,30 L50,70" stroke="#a0cc47" stroke-width="6"/>
+        
+        <!-- 标题文字 -->
+        <text x="120" y="45" font-family="Arial" font-size="48" font-weight="bold" fill="#1f3245">
+            Flowable 中文文档
+        </text>
+        <text x="120" y="95" font-family="Arial" font-size="32" fill="#666">
+            开源工作流引擎
+        </text>
+    </g>
+    
+    <!-- 工作流示意图 -->
+    <g transform="translate(100,300)">
+        <!-- 简化的流程图 -->
+        <rect x="50" y="0" width="150" height="60" rx="10" fill="#1f3245"/>
+        <text x="125" y="35" text-anchor="middle" fill="white" font-family="Arial" font-size="16">开始</text>
+        
+        <line x1="200" y1="30" x2="300" y2="30" stroke="#a0cc47" stroke-width="3"/>
+        <polygon points="300,35 310,30 300,25" fill="#a0cc47"/>
+        
+        <rect x="310" y="0" width="150" height="60" rx="10" fill="#1f3245"/>
+        <text x="385" y="35" text-anchor="middle" fill="white" font-family="Arial" font-size="16">审批任务</text>
+        
+        <line x1="460" y1="30" x2="560" y2="30" stroke="#a0cc47" stroke-width="3"/>
+        <polygon points="560,35 570,30 560,25" fill="#a0cc47"/>
+        
+        <rect x="570" y="0" width="150" height="60" rx="10" fill="#1f3245"/>
+        <text x="645" y="35" text-anchor="middle" fill="white" font-family="Arial" font-size="16">结束</text>
+    </g>
+    
+    <!-- 底部信息 -->
+    <text x="100" y="550" font-family="Arial" font-size="24" fill="#666">
+        访问 flowable.me 获取更多信息
+    </text>
+</svg> 

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- 定义箭头样式 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+    <!-- 定义通用样式 -->
+    <style type="text/css">
+      .task { fill: #b8d5ff; stroke: #5d88db; stroke-width: 1.5; }
+      .gateway { fill: #fffccc; stroke: #e8b331; stroke-width: 1.5; }
+      .event { fill: #ffdcdc; stroke: #e26f6f; stroke-width: 1.5; }
+      .text { font-family: Arial, sans-serif; font-size: 12px; text-anchor: middle; }
+      .flow-text { font-family: Arial, sans-serif; font-size: 10px; fill: #666; }
+      .section-title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="#ffffff" />
+  
+  <!-- 标题 -->
+  <text x="400" y="30" class="section-title" font-size="16">分支流程模式</text>
+  
+  <!-- 排他网关示例 -->
+  <text x="200" y="60" class="section-title">排他网关 (Exclusive Gateway)</text>
+  
+  <!-- 开始节点 -->
+  <circle cx="200" cy="100" r="15" class="event" />
+  <text x="200" y="104" class="text">开始</text>
+  
+  <!-- 初始任务 -->
+  <rect x="150" y="130" width="100" height="50" rx="5" ry="5" class="task" />
+  <text x="200" y="160" class="text">提交申请</text>
+  
+  <!-- 排他网关 -->
+  <rect x="180" y="200" width="40" height="40" transform="rotate(45 200 220)" class="gateway" />
+  <text x="200" y="223" class="text" font-size="18">×</text>
+  <text x="200" y="250" class="text">审批决策</text>
+  
+  <!-- 分支路径 -->
+  <rect x="80" y="280" width="100" height="50" rx="5" ry="5" class="task" />
+  <text x="130" y="310" class="text">拒绝处理</text>
+  
+  <rect x="220" y="280" width="100" height="50" rx="5" ry="5" class="task" />
+  <text x="270" y="310" class="text">批准处理</text>
+  
+  <!-- 结束节点 -->
+  <circle cx="130" cy="360" r="15" class="event" />
+  <text x="130" y="364" class="text">结束</text>
+  
+  <circle cx="270" cy="360" r="15" class="event" />
+  <text x="270" y="364" class="text">结束</text>
+  
+  <!-- 连接线 -->
+  <line x1="200" y1="115" x2="200" y2="130" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="200" y1="180" x2="200" y2="200" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="185" y1="235" x2="130" y2="280" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="140" y="255" class="flow-text">approved == false</text>
+  <line x1="215" y1="235" x2="270" y2="280" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="260" y="255" class="flow-text">approved == true</text>
+  <line x1="130" y1="330" x2="130" y2="345" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="270" y1="330" x2="270" y2="345" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- 包容网关示例 -->
+  <text x="600" y="60" class="section-title">包容网关 (Inclusive Gateway)</text>
+  
+  <!-- 开始节点 -->
+  <circle cx="600" cy="100" r="15" class="event" />
+  <text x="600" y="104" class="text">开始</text>
+  
+  <!-- 初始任务 -->
+  <rect x="550" y="130" width="100" height="50" rx="5" ry="5" class="task" />
+  <text x="600" y="160" class="text">贷款申请</text>
+  
+  <!-- 包容网关 -->
+  <rect x="580" y="200" width="40" height="40" transform="rotate(45 600 220)" class="gateway" />
+  <text x="600" y="223" class="text" font-size="18">○</text>
+  <text x="600" y="250" class="text">风险评估</text>
+  
+  <!-- 分支路径 -->
+  <rect x="450" y="280" width="100" height="50" rx="5" ry="5" class="task" />
+  <text x="500" y="310" class="text">信用检查</text>
+  
+  <rect x="550" y="320" width="100" height="50" rx="5" ry="5" class="task" />
+  <text x="600" y="350" class="text">身份验证</text>
+  
+  <rect x="650" y="280" width="100" height="50" rx="5" ry="5" class="task" />
+  <text x="700" y="310" class="text">基础处理</text>
+  
+  <!-- 结束节点 -->
+  <circle cx="600" cy="380" r="15" class="event" />
+  <text x="600" y="384" class="text">结束</text>
+  
+  <!-- 连接线 -->
+  <line x1="600" y1="115" x2="600" y2="130" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="600" y1="180" x2="600" y2="200" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="585" y1="235" x2="515" y2="280" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="510" y="255" class="flow-text">amount > 10000</text>
+  <line x1="600" y1="240" x2="600" y2="320" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="660" y="280" class="flow-text">customerType == 'new'</text>
+  <line x1="615" y1="235" x2="680" y2="280" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="700" y="255" class="flow-text">其他情况</text>
+  <line x1="500" y1="330" x2="585" y2="380" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="600" y1="370" x2="600" y2="365" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <line x1="700" y1="330" x2="615" y2="380" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
+</svg> 

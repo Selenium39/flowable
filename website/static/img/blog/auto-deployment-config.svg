@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px Arial; fill: #333; }
+    .subtitle { font: bold 18px Arial; fill: #555; }
+    .config-box { stroke: #673ab7; stroke-width: 2; fill: #ede7f6; rx: 8; ry: 8; }
+    .config-label { font: bold 16px Arial; fill: #4527a0; }
+    .property { font: 14px monospace; fill: #333; }
+    .value { font: 14px monospace; fill: #d32f2f; }
+    .description { font: italic 14px Arial; fill: #555; }
+    .section { font: bold 18px Arial; fill: #555; }
+  </style>
+  
+  <text x="400" y="30" text-anchor="middle" class="title">Flowable 自动部署配置选项</text>
+  
+  <!-- 应用部署配置 -->
+  <text x="50" y="70" class="section">应用部署配置</text>
+  <rect x="50" y="80" width="700" height="80" class="config-box" />
+  <text x="70" y="105" class="config-label">应用资源位置</text>
+  <text x="70" y="130" class="property">flowable.app.resource-location = </text>
+  <text x="350" y="130" class="value">classpath*:/apps/</text>
+  <text x="70" y="150" class="description">指定应用资源的位置，默认为 apps/ 目录</text>
+  
+  <rect x="50" y="170" width="700" height="80" class="config-box" />
+  <text x="70" y="195" class="config-label">禁用应用部署</text>
+  <text x="70" y="220" class="property">flowable.app.deploy-resources = </text>
+  <text x="350" y="220" class="value">false</text>
+  <text x="70" y="240" class="description">设置为 false 可禁用应用资源的自动部署</text>
+  
+  <!-- 流程模型配置 -->
+  <text x="50" y="280" class="section">流程模型配置</text>
+  <rect x="50" y="290" width="700" height="80" class="config-box" />
+  <text x="70" y="315" class="config-label">流程定义位置</text>
+  <text x="70" y="340" class="property">flowable.process-definition-location-prefix = </text>
+  <text x="450" y="340" class="value">classpath*:/processes/</text>
+  <text x="70" y="360" class="description">指定流程定义的位置，默认为 processes/ 目录</text>
+  
+  <rect x="50" y="380" width="700" height="80" class="config-box" />
+  <text x="70" y="405" class="config-label">禁用流程定义检查</text>
+  <text x="70" y="430" class="property">flowable.check-process-definitions = </text>
+  <text x="350" y="430" class="value">false</text>
+  <text x="70" y="450" class="description">设置为 false 可禁用流程定义的自动部署</text>
+  
+  <!-- 其他配置 -->
+  <text x="400" y="480" text-anchor="middle" class="description">* 每种模型类型都有类似的配置选项</text>
+</svg> 
