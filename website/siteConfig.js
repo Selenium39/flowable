@@ -33,7 +33,7 @@ const siteConfig = {
     {page: 'all-javadocs', label: 'Java文档'},
     {blog: true, label: '博客'},
     {href: 'https://ui.flowable.me/flowable-ui', label: 'Flowable UI', external: true},
-    {href: 'https://mp.weixin.qq.com/s/vlUZYTnLUSCHltVU8SfMgA', label: '加入交流群', external: true},
+    {href: 'https://mp.weixin.qq.com/s/AWbYObiXzJXveLbZl0AofA', label: '加入交流群', external: true},
     {href: 'https://www.flowable.com/open-source/docs/', label: '英文文档', external: true},
     { search: false },
   ],
