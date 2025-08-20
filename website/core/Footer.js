@@ -60,13 +60,16 @@ class Footer extends React.Component {
           <div>
             <h5>友情链接</h5>
             <a href="https://chat-tempmail.com" target="_blank">
-              ChatTempMail - AI驱动的临时邮箱
+              ChatTempMail
             </a>
             <a href="https://fwfw.app" target="_blank">
-              FWFW - Find Websites From World
+              FWFW
             </a>
             <a href="https://llmocr.com" target="_blank">
-              LLMOCR - AI驱动的OCR服务
+              LLMOCR
+            </a>
+            <a href="https://mihoyonb.com" target="_blank">
+              原牛
             </a>
           </div>
         </section>
