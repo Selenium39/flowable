@@ -1,6 +1,7 @@
 {
 	"docs": {
 	  "Flowable 开源": ["oss-introduction"],
+	  "REST API 通用原则": ["header-rest"],
 	  "BPMN 用户指南": [
 		  "bpmn/ch02-GettingStarted",
 		  "bpmn/ch03-Configuration",

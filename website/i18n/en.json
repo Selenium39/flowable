@@ -141,6 +141,7 @@
     },
     "categories": {
       "Flowable 开源": "Flowable 开源",
+      "REST API 通用原则": "REST API 通用原则",
       "BPMN 用户指南": "BPMN 用户指南",
       "CMMN 用户指南": "CMMN 用户指南",
       "事件注册表用户指南": "事件注册表用户指南",
