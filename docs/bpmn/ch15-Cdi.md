@@ -1,5 +1,5 @@
 ---
-id: ch16-Cdi
+id: ch15-Cdi
 title: CDI 集成
 description: Flowable CDI集成模块结合了Flowable流程引擎的可配置性和CDI的扩展性，支持@BusinessProcessScoped作用域、CDI beans解析、声明式流程控制，兼容Java EE/SE和Spring环境，简化BPMN应用开发。
 keywords: Flowable,CDI集成,BPMN流程管理,业务流程作用域,Java EE,Spring集成,流程引擎配置

@@ -50,7 +50,7 @@
       "bpmn/ch14-REST": {
         "title": "REST API"
       },
-      "bpmn/ch16-Cdi": {
+      "bpmn/ch15-Cdi": {
         "title": "CDI 集成"
       },
       "bpmn/ch16-Ldap": {
