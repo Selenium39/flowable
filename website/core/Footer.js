@@ -53,24 +53,24 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>联系方式</h5>
-            <a href="mailto:selenium39@qq.com">
-              邮箱: selenium39@qq.com
-            </a>
+            <a href="mailto:selenium39@foxmail.com">selenium39@foxmail.com</a>
+            <a href="https://github.com/Selenium39" target="_blank">GitHub</a>
+            <a href="https://x.com/yuxing39" target="_blank">X</a>
           </div>
           <div>
             <h5>友情链接</h5>
-            <a href="https://chat-tempmail.com" target="_blank">
-              ChatTempMail
-            </a>
-            <a href="https://fwfw.app" target="_blank">
-              FWFW
-            </a>
-            <a href="https://llmocr.com" target="_blank">
-              LLMOCR
-            </a>
-            <a href="https://mihoyonb.com" target="_blank">
-              原牛
-            </a>
+            <div style={{display: 'flex', gap: '40px'}}>
+              <div style={{display: 'flex', flexDirection: 'column'}}>
+                <a href="https://chat-tempmail.com/zh" target="_blank">ChatTempMail</a>
+                <a href="https://fwfw.app" target="_blank">FWFW</a>
+                <a href="https://llmocr.com/zh" target="_blank">LLMOCR</a>
+              </div>
+              <div style={{display: 'flex', flexDirection: 'column'}}>
+                <a href="https://mihoyonb.com" target="_blank">原牛</a>
+                <a href="https://leafpdf.com" target="_blank">LeafPDF</a>
+                <a href="https://e-ink.me/zh" target="_blank">E-Ink</a>
+              </div>
+            </div>
           </div>
         </section>
         <section className="copyright">{this.props.config.copyright}</section>
