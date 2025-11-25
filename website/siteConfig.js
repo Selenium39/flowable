@@ -106,7 +106,7 @@ const siteConfig = {
   {
     src: 'https://umami.selenium39.me/script.js',
     defer: true,
-    'data-website-id': '7c3629e9-657a-4b79-bdad-edb995325ad3'
+    'data-website-id': '2a9767de-4b25-4e78-b9e9-d0a26a198562'
   }
 ],
 
