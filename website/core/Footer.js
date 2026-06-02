@@ -66,8 +66,8 @@ class Footer extends React.Component {
                 <a href="https://llmocr.com/zh" target="_blank">LLMOCR</a>
               </div>
               <div style={{display: 'flex', flexDirection: 'column'}}>
+                <a href="https://nbility.dev/auth/register?aff=Qz3B" target="_blank">Nbility</a>
                 <a href="https://mihoyonb.com" target="_blank">原牛</a>
-                <a href="https://leafpdf.com" target="_blank">LeafPDF</a>
                 <a href="https://e-ink.me/zh" target="_blank">E-Ink</a>
               </div>
             </div>

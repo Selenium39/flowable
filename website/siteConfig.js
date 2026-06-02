@@ -29,6 +29,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
+    {href: 'https://nbility.dev', label: '一站式AI大模型网关 - Nbility', external: true},
     {doc: 'oss-introduction', label: '指南'},
     {page: 'all-javadocs', label: 'Java文档'},
     {blog: true, label: '博客'},
