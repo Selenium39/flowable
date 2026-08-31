@@ -125,17 +125,12 @@
       "header-rest": {
         "title": "Flowable REST 通用原则"
       },
-      "nbility": {
-        "title": "了解Nbility",
-        "sidebar_label": "了解Nbility"
-      },
       "oss-introduction": {
         "title": "Flowable开源介绍",
         "sidebar_label": "开源详情"
       }
     },
     "links": {
-      "一站式AI大模型网关 - Nbility": "一站式AI大模型网关 - Nbility",
       "指南": "指南",
       "Java文档": "Java文档",
       "博客": "博客",
