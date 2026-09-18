@@ -53,7 +53,7 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>联系方式</h5>
-            <a href="mailto:selenium39@foxmail.com">selenium39@foxmail.com</a>
+            <a href="mailto:openminimax@gmail.com">openminimax@gmail.com</a>
             <a href="https://github.com/Selenium39" target="_blank">GitHub</a>
             <a href="https://x.com/yuxing39" target="_blank">X</a>
           </div>
@@ -63,7 +63,7 @@ class Footer extends React.Component {
               <div style={{display: 'flex', flexDirection: 'column'}}>
                 <a href="https://chat-tempmail.com/zh" target="_blank">ChatTempMail</a>
                 <a href="https://fwfw.app" target="_blank">FWFW</a>
-                <a href="https://llmocr.com/zh" target="_blank">LLMOCR</a>
+                <a href="https://iloveepub.com" target="_blank">iloveepub</a>
               </div>
               <div style={{display: 'flex', flexDirection: 'column'}}>
                 <a href="https://mihoyonb.com" target="_blank">原牛</a>
