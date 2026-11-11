@@ -104,6 +104,10 @@
       "dmn/ch07-REST": {
         "title": "REST API"
       },
+      "dsh-bpmn-plugin": {
+        "title": "给 DeepSeek Harness 装上 BPMN 建模器：dsh-bpmn 插件介绍",
+        "sidebar_label": "dsh-bpmn 插件"
+      },
       "eventregistry/ch02-Configuration": {
         "title": "配置"
       },
@@ -148,6 +152,7 @@
       "DMN 用户指南": "DMN 用户指南",
       "表单用户指南": "表单用户指南",
       "应用指南": "应用指南",
+      "生态工具": "生态工具",
       "免责声明": "免责声明"
     }
   },
