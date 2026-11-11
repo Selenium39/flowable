@@ -95,6 +95,8 @@ const siteConfig = {
   },
   // 手动广告位注入脚本，slot 定义见 static/js/adsense-units.js
   '/js/adsense-units.js',
+  // 腾讯云 CPS 推广文字条，链接定义见 static/js/cps-units.js
+  '/js/cps-units.js',
   {
     src: "https://ai.youdao.com/saas/qanything/js/agent-iframe-min.js",
     id: "qanything-iframe",
